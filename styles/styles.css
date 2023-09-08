@@ -31,7 +31,7 @@ html {
   align-self: center;
 }
 .svg__background__curve {
-  margin-top: 45%;
+  margin-top: 50%;
   width: 75%;
 }
 
@@ -62,7 +62,7 @@ html {
   justify-content: center;
   align-items: center;
 }
-.profile__arrows__prev__img {
+.profile__arrows__prev__img, .profile__arrows__next__img {
   width: 25%;
   height: 30%;
 }
@@ -71,10 +71,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.profile__arrows__next__img {
-  width: 25%;
-  height: 30%;
 }
 .profile__image {
   margin: 5%;
@@ -106,6 +102,121 @@ html {
   font-size: 0.4rem;
   font-weight: 700;
   color: hsl(240, 18%, 77%);
+}
+
+@media (min-width: 1440px) {
+  .svg__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .svg__background__bg {
+    position: relative;
+    order: 1;
+    margin-left: 23%;
+    width: auto;
+    height: 85%;
+    top: 80px;
+  }
+  .svg__background__quotes {
+    position: relative;
+    left: 300px;
+    bottom: 400px;
+    height: 10%;
+    width: auto;
+  }
+  .svg__background__curve {
+    position: absolute;
+    height: 20%;
+    width: auto;
+    bottom: 0%;
+    right: 55%;
+  }
+  .profile {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5%;
+  }
+  .profile__arrows {
+    position: absolute;
+    order: 4;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    right: 37%;
+    width: 7%;
+    height: 6%;
+    bottom: 14%;
+    border-radius: 100px;
+  }
+  .profile__arrows__prev {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile__arrows__prev__img, .profile__arrows__next__img {
+    width: 25%;
+    height: 30%;
+  }
+  .profile__arrows__next {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile__image {
+    position: relative;
+    order: 5;
+    top: -110px;
+    left: 1050px;
+    width: auto;
+    height: 85%;
+    box-shadow: 10px 60px 40px -40px hsla(240, 37%, 20%, 0.329);
+    border-radius: 5px;
+  }
+  .profile__paragraph {
+    order: 1;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    width: 45%;
+    margin: 0%;
+    bottom: 550px;
+    left: 250px;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: hsl(240, 38%, 20%);
+  }
+  .profile__span__name {
+    position: absolute;
+    bottom: 450px;
+    left: 250px;
+    order: 2;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(240, 38%, 20%);
+  }
+  .profile__span__roll {
+    position: absolute;
+    order: 3;
+    font-family: "Inter", sans-serif;
+    bottom: 450px;
+    left: 525px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(240, 18%, 77%);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
