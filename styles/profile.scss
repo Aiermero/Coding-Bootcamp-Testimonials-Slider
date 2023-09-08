@@ -11,7 +11,6 @@
     &__arrows{
         display: flex;
         justify-content: space-around;
-        background-color: white;
         width: 22%;
         height: 6%;
         position: relative;
@@ -19,9 +18,21 @@
         border-radius: 100px;
         &__prev{
             width: 50%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            background-color: white;
+            &:hover{
+                background-color: rgb(182, 182, 182);
+            }
+            &:active{
+                align-self: center;
+                width: 45%;
+                height: 80%;
+            }
             &__img{
                 width: 25%;
                 height: 30%;
@@ -32,6 +43,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            &:hover{
+                background-color: rgb(182, 182, 182);
+            }
+            &:active{
+                align-self: center;
+                width: 45%;
+                height: 80%;
+            }
             &__img{
                 @extend .profile__arrows__prev__img;
             }
