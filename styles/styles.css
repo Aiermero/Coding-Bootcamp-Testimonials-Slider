@@ -18,14 +18,16 @@ html {
   z-index: 0;
 }
 .svg__background__bg {
-  margin: 5%;
-  width: 90%;
-  height: 50%;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  width: 85%;
+  height: auto;
 }
 .svg__background__quotes {
-  margin-top: 5%;
+  margin-top: 15%;
   width: 18%;
-  height: 8%;
+  height: 7.5%;
   align-self: center;
 }
 .svg__background__curve {
@@ -36,6 +38,7 @@ html {
 .profile {
   position: absolute;
   align-self: center;
+  right: 9px;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -60,8 +63,8 @@ html {
   align-items: center;
 }
 .profile__arrows__prev__img {
-  width: auto;
-  height: 40%;
+  width: 25%;
+  height: 30%;
 }
 .profile__arrows__next {
   width: 50%;
@@ -70,17 +73,20 @@ html {
   align-items: center;
 }
 .profile__arrows__next__img {
-  width: auto;
-  height: 40%;
+  width: 25%;
+  height: 30%;
 }
 .profile__image {
   margin: 5%;
-  margin-top: 14%;
-  width: 70%;
-  height: 39%;
+  margin-top: 13%;
+  width: 67%;
+  height: 37%;
+  box-shadow: 10px 60px 40px -40px hsla(240, 37%, 20%, 0.329);
+  border-radius: 5px;
 }
 .profile__paragraph {
   font-family: "Inter", sans-serif;
+  width: 80%;
   margin: 5%;
   margin-top: 7%;
   margin-bottom: 3%;

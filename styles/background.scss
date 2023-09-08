@@ -6,14 +6,16 @@
     position: absolute;
     z-index: 0;
     &__bg{
-        margin: 5%;
-        width: 90%;
-        height: 50%;    
+        position: relative;
+        left: 20px;
+        top: 20px;
+        width: 85%;
+        height: auto;    
     }
     &__quotes{
-        margin-top: 5%;
+        margin-top: 15%;
         width: 18%;
-        height: 8%;
+        height: 7.5%;
         align-self: center;
     }
     &__curve{

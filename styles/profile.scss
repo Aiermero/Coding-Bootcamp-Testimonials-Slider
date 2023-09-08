@@ -1,6 +1,7 @@
 .profile{
     position: absolute;
     align-self: center;
+    right: 9px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -22,8 +23,8 @@
             justify-content: center;
             align-items: center;
             &__img{
-                width: auto;
-                height: 40%;
+                width: 25%;
+                height: 30%;
             }
         }
         &__next{
@@ -32,19 +33,22 @@
             justify-content: center;
             align-items: center;
             &__img{
-                width: auto;
-                height: 40%;
+                width: 25%;
+                height: 30%;
             }
         }
     }
     &__image{
         margin: 5%;
-        margin-top: 14%;
-        width: 70%;
-        height: 39%;
+        margin-top: 13%;
+        width: 67%;
+        height: 37%;
+        box-shadow: 10px 60px 40px -40px hsla(240, 37%, 20%, 0.329);
+        border-radius: 5px;
     }
     &__paragraph{
         font-family: 'Inter', sans-serif;
+        width: 80%;
         margin: 5%;
         margin-top: 7%;
         margin-bottom: 3%;
